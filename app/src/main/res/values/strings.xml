@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">My home Works</string>
-    <string name="MyFirftApp">мое первое не перевое приложение</string>
-    <string name="homeWork2">ДЗ 2</string>
+    <string name="homeWork2">Load Image</string>
+    <string name="load_picture">Load picture</string>
+    <string name="valid_url">"enter valid URL"</string>
 </resources>

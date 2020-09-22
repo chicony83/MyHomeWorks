@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button.setOnClickListener{
+        button_load_img.setOnClickListener{
             val intent = Intent(this,DZ1Activity::class.java)
             startActivity(intent)
         }
