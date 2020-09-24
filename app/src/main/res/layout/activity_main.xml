@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.069" />
 
     <Button
-        android:id="@+id/dz_03_button"
+        android:id="@+id/button_dz_03"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:text="@string/dz3"

@@ -4,5 +4,7 @@
     <string name="load_picture">Load picture</string>
     <string name="valid_url">"enter valid URL"</string>
     <string name="dz3">"dz3(flags/animation)"</string>
+    <string name="flags">"flags"</string>
+    <string name="animation">"animation"</string>
 
 </resources>
