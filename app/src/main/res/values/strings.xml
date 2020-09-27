@@ -3,4 +3,5 @@
     <string name="homeWork2">Load Image</string>
     <string name="load_picture">Load picture</string>
     <string name="valid_url">"enter valid URL"</string>
+    <string name="harvesting">Harvesting <br/> HW 4</string>
 </resources>

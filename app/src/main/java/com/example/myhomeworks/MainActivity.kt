@@ -15,5 +15,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        button_harvesting.setOnClickListener{
+            val intent = Intent(this,DZ4HarvestingAktivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }
