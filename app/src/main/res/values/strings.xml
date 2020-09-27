@@ -6,4 +6,13 @@
     <string name="harvesting">Harvesting <br/> HW 4</string>
     <string name="harvesting_title">сбор урожая</string>
 
+    <string name="company1">предприятие 1</string>
+    <string name="company2">предприятие 2</string>
+    <string name="company3">предприятие 3</string>
+
+    <string name="potato">картоха</string>
+    <string name="wheat">пшеница</string>
+    <string name="corn">кукуруза</string>
+
+
 </resources>
