@@ -14,18 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-//val myViewModel = ViewModelProvider()
-        val myViewModel = ViewModelProvider(this).get(MyViewModel::class.java)
-
-        myViewModel.counter.observe(this, Observer {newCounterData->
-            text_view.text = newCounterData.toString()
-        })
-
-//        text_view.text = myViewModel.counter.toString()
-//
-//        lifecycle.addObserver(MyLifeCycleObserver(this))
-
         button_load_img.setOnClickListener {
             val intent = Intent(this, DZ1Activity::class.java)
             startActivity(intent)
@@ -36,8 +24,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        button_add_1.setOnClickListener{
-myViewModel.userClicked()
-        }
     }
 }
