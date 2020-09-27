@@ -2,13 +2,13 @@ package com.example.myhomeworks
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_d_z1.*
+import kotlinx.android.synthetic.main.activity_dz_1.*
 import com.squareup.picasso.Picasso
 
 class DZ1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_d_z1)
+        setContentView(R.layout.activity_dz_1)
 
         button_load_img.setOnClickListener{showIMG()}
     }

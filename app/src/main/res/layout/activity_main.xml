@@ -5,6 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/vintagepaperbackground"
+        android:scaleType="centerCrop"
+        />
 
     <Button
         android:id="@+id/button_load_img"
