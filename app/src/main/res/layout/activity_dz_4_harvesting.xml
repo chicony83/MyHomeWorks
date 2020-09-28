@@ -41,17 +41,47 @@
 
         <LinearLayout style="@style/agricultures_parent_container">
 
-            <LinearLayout style="@style/agriculture_container">
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/agriculture_container">
 
-            </LinearLayout>
+                <ImageView
+                    style="@style/agriculture_ImageView"
+                    android:id="@+id/imageView_potato_company1"
+                    android:src="@drawable/potato"></ImageView>
 
-            <LinearLayout style="@style/agriculture_container">
+                <TextView
+                    style="@style/agriculture_TextView"
+                    android:text="100%">
 
-            </LinearLayout>
+                </TextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <LinearLayout style="@style/agriculture_container">
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/agriculture_container">
 
-            </LinearLayout>
+                <ImageView
+                    style="@style/agriculture_ImageView"
+                    android:id="@+id/imageView_wheat_company1"
+                    android:src="@drawable/wheat">
+
+                </ImageView>
+                <TextView
+                    style="@style/agriculture_TextView"
+                    android:text="100%">
+
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/agriculture_container">
+                <ImageView
+                    style="@style/agriculture_ImageView"
+                    android:id="@+id/imageView_corn_company1"
+                    android:src="@drawable/corn"></ImageView>
+                <TextView
+                    style="@style/agriculture_TextView"
+                    android:text="100%">
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
