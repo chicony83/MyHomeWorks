@@ -34,10 +34,26 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            style="@style/h2_title"
             android:id="@+id/textView_title_company1"
-            android:text="@string/company1"
-             />
+            style="@style/h2_title"
+            android:text="@string/company1" />
+
+
+        <LinearLayout style="@style/agricultures_parent_container">
+
+            <LinearLayout style="@style/agriculture_container">
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/agriculture_container">
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/agriculture_container">
+
+            </LinearLayout>
+
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -48,9 +64,25 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            style="@style/h2_title"
             android:id="@+id/textView_title_company2"
-            android:text="@string/company2"/>
+            style="@style/h2_title"
+            android:text="@string/company2" />
+
+        <LinearLayout style="@style/agricultures_parent_container">
+
+            <LinearLayout style="@style/agriculture_container">
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/agriculture_container">
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/agriculture_container">
+
+            </LinearLayout>
+
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -62,9 +94,25 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            style="@style/h2_title"
             android:id="@+id/textView_title_company3"
-            android:text="@string/company3"/>
+            style="@style/h2_title"
+            android:text="@string/company3" />
+
+        <LinearLayout style="@style/agricultures_parent_container">
+
+            <LinearLayout style="@style/agriculture_container">
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/agriculture_container">
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/agriculture_container">
+
+            </LinearLayout>
+
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
