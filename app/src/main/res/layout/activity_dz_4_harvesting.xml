@@ -50,7 +50,8 @@
 
                 <TextView
                     style="@style/agriculture_TextView"
-                    android:text="100%">
+                    android:id="@+id/textView_company1_potato"
+                    android:text="0">
 
                 </TextView>
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -65,7 +66,8 @@
                 </ImageView>
                 <TextView
                     style="@style/agriculture_TextView"
-                    android:text="100%">
+                    android:id="@+id/textView_company1_wheat"
+                    android:text="0">
 
                 </TextView>
 
@@ -78,7 +80,8 @@
                     android:src="@drawable/corn"></ImageView>
                 <TextView
                     style="@style/agriculture_TextView"
-                    android:text="100%">
+                    android:id="@+id/textView_company1_corn"
+                    android:text="0">
                 </TextView>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -100,17 +103,50 @@
 
         <LinearLayout style="@style/agricultures_parent_container">
 
-            <LinearLayout style="@style/agriculture_container">
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/agriculture_container">
 
-            </LinearLayout>
+                <ImageView
+                    style="@style/agriculture_ImageView"
+                    android:id="@+id/imageView_potato_company2"
+                    android:src="@drawable/potato"></ImageView>
 
-            <LinearLayout style="@style/agriculture_container">
+                <TextView
+                    style="@style/agriculture_TextView"
+                    android:id="@+id/textView_company2_potato"
+                    android:text="0">
 
-            </LinearLayout>
+                </TextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <LinearLayout style="@style/agriculture_container">
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/agriculture_container">
 
-            </LinearLayout>
+                <ImageView
+                    style="@style/agriculture_ImageView"
+                    android:id="@+id/imageView_wheat_company2"
+                    android:src="@drawable/wheat">
+
+                </ImageView>
+                <TextView
+                    style="@style/agriculture_TextView"
+                    android:id="@+id/textView_company2_wheat"
+                    android:text="0">
+
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/agriculture_container">
+                <ImageView
+                    style="@style/agriculture_ImageView"
+                    android:id="@+id/imageView_corn_company2"
+                    android:src="@drawable/corn"></ImageView>
+                <TextView
+                    style="@style/agriculture_TextView"
+                    android:id="@+id/textView_company2_corn"
+                    android:text="0">
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -130,20 +166,61 @@
 
         <LinearLayout style="@style/agricultures_parent_container">
 
-            <LinearLayout style="@style/agriculture_container">
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/agriculture_container">
 
-            </LinearLayout>
+                <ImageView
+                    style="@style/agriculture_ImageView"
+                    android:id="@+id/imageView_potato_company3"
+                    android:src="@drawable/potato">
 
-            <LinearLayout style="@style/agriculture_container">
+                </ImageView>
+                <TextView
+                    style="@style/agriculture_TextView"
+                    android:id="@+id/textView_company3_potato"
+                    android:text="0">
 
-            </LinearLayout>
+                </TextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <LinearLayout style="@style/agriculture_container">
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/agriculture_container">
 
-            </LinearLayout>
+                <ImageView
+                    style="@style/agriculture_ImageView"
+                    android:id="@+id/imageView_wheat_company3"
+                    android:src="@drawable/wheat">
+                </ImageView>
+                <TextView
+                    style="@style/agriculture_TextView"
+                    android:id="@+id/textView_company3_wheat"
+                    android:text="0">
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/agriculture_container">
+                <ImageView
+                    style="@style/agriculture_ImageView"
+                    android:id="@+id/imageView_corn_company3"
+                    android:src="@drawable/corn"></ImageView>
+                <TextView
+                    style="@style/agriculture_TextView"
+                    android:id="@+id/textView_company3_corn"
+                    android:text="0">
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_incoming_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="получать данные"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
