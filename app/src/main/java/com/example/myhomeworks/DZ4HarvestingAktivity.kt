@@ -3,6 +3,7 @@ package com.example.myhomeworks
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_dz_4_harvesting.*
 import kotlinx.coroutines.*
 
@@ -20,19 +21,16 @@ class DZ4HarvestingAktivity : AppCompatActivity() {
     }
 
     fun run() {
-//        while (!winner) {
 
             val data = incomingData()
 
-//        }
     }
 
     private fun incomingData() = runBlocking<Unit> {
         CoroutineScope(Dispatchers.Main).launch {
             while (!winner){
-                delay(1000)
+                delay(100)
                 val rndNum = RndNum()
-//            var c = textView_company1_corn.text
                 var num: Int = 0
                 when (rndNum) {
                     0 -> num = textView_company1_potato.text.toString().toInt()
@@ -48,7 +46,10 @@ class DZ4HarvestingAktivity : AppCompatActivity() {
 
                 num = num.plus(1)
                 Log.i("TAG", "new v = $num")
-
+                if(num == 100){
+                    winner = true
+                    Toast.makeText(this, "есть победитель", Toast.LENGTH_SHORT).show()
+                }
                 when (rndNum) {
                     0 -> textView_company1_potato.text = num.toString()
                     1 -> textView_company1_wheat.text = num.toString()
@@ -60,9 +61,6 @@ class DZ4HarvestingAktivity : AppCompatActivity() {
                     7 -> textView_company3_wheat.text = num.toString()
                     8 -> textView_company3_corn.text = num.toString()
                 }
-                //v++
-                //checkToWin(v)
-
             }
         }
 
