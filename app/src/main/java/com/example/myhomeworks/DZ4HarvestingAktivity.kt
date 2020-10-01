@@ -29,7 +29,7 @@ class DZ4HarvestingAktivity : AppCompatActivity() {
     private fun incomingData() = runBlocking<Unit> {
         CoroutineScope(Dispatchers.Main).launch {
             while (!winner){
-                delay(100)
+                delay(75)
                 val rndNum = RndNum()
                 var num: Int = 0
                 when (rndNum) {
@@ -48,7 +48,7 @@ class DZ4HarvestingAktivity : AppCompatActivity() {
                 Log.i("TAG", "new v = $num")
                 if(num == 100){
                     winner = true
-                    Toast.makeText(this, "есть победитель", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@DZ4HarvestingAktivity, "есть победитель", Toast.LENGTH_SHORT).show()
                 }
                 when (rndNum) {
                     0 -> textView_company1_potato.text = num.toString()
