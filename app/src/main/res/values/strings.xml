@@ -6,5 +6,7 @@
     <string name="dz3">"dz3(flags/animation)"</string>
     <string name="flags">"flags"</string>
     <string name="animation">"animation"</string>
+    <string name="catalog">catalog</string>
+    <string name="add_coffee">add Coffee</string>
 
 </resources>
