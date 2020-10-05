@@ -23,6 +23,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DZ3Activity::class.java)
             startActivity(intent)
         }
+        button_coffee_catalog.setOnClickListener{
+            val intent= Intent(this,CoffeeSplashScreenActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

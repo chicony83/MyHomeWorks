@@ -7,19 +7,13 @@
     android:orientation="vertical"
     tools:context=".CoffeeSplashScreenActivity">
 
-    <FrameLayout
-        android:id="@+id/fragmentsView"
+    <fragment
+        android:name="com.example.myhomeworks.CoffeeSplashScreenFragment"
+        android:id="@+id/fr_place"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout12"
-        app:layout_constraintTop_toTopOf="parent">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/backgroundcoffe"
-            android:scaleType="centerCrop"/>
-    </FrameLayout>
-
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
     <LinearLayout
         android:id="@+id/linearLayout12"
         android:layout_width="match_parent"
