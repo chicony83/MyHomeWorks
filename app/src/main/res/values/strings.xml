@@ -6,10 +6,11 @@
     <string name="dz3">"dz3(flags/animation)"</string>
     <string name="flags">"flags"</string>
     <string name="animation">"animation"</string>
-    <string name="catalog">catalog</string>
-    <string name="add_coffee">add Coffee</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="catalog_coffee">catalog coffee</string>
+    <string name="add_coffee">add coffee</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="coffee_catalog">Coffee Catalog</string>
+    <string name="welcome_to_coffee_catalog">welcom to coffee catalog</string>
 
 </resources>

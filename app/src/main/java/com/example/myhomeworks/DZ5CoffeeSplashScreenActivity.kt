@@ -10,14 +10,13 @@ class DZ5CoffeeSplashScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_coffee_splash_screen)
 
         val coffeeAddFragment = CoffeeAddFragment()
-        val coffeeSplashScreenFragment = CoffeeSplashScreenFragment()
+        val coffeeCatalogFragment = CoffeeCatalogFragment()
 
         button_addNewCoffee.setOnClickListener{
             supportFragmentManager.beginTransaction().replace(R.id.fr_place,coffeeAddFragment).commit()
         }
         button_catalogCoffee.setOnClickListener{
-            supportFragmentManager.beginTransaction().replace(R.id.fr_place,coffeeSplashScreenFragment).commit()
+            supportFragmentManager.beginTransaction().replace(R.id.fr_place,coffeeCatalogFragment).commit()
         }
-
     }
 }

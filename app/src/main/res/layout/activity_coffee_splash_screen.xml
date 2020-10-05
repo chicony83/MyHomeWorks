@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="5"
-            android:text="@string/catalog"
+            android:text="@string/catalog_coffee"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:layout_editor_absoluteX="226dp" />
     </LinearLayout>

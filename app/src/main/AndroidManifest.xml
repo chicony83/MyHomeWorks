@@ -11,8 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DZ5CoffeeSplashScreenActivity"></activity>
-        <activity android:name=".DZ5FragmentsActivity" />
+        <activity android:name=".DZ5CoffeeSplashScreenActivity" />
         <activity android:name=".AnimationActivity" />
         <activity android:name=".FlagsActivity" />
         <activity android:name=".DZ3Activity" />

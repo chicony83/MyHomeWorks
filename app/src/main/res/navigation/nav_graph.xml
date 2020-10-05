@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graw"
+    app:startDestination="@id/coffeeAddFragment">
+
+    <fragment
+        android:id="@+id/coffeeAddFragment"
+        android:name="com.example.myhomeworks.CoffeeAddFragment"
+        android:label="fragment_coffee_add"
+        tools:layout="@layout/fragment_coffee_add" >
+        <action
+            android:id="@+id/action_coffeeAddFragment_to_coffeeSplashScreenFragment2"
+            app:destination="@id/coffeeSplashScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coffeeCatalogFragment"
+        android:name="com.example.myhomeworks.CoffeeCatalogFragment"
+        android:label="fragment_coffee_catalog"
+        tools:layout="@layout/fragment_coffee_catalog" >
+        <action
+            android:id="@+id/action_coffeeCatalogFragment_to_coffeeSplashScreenFragment"
+            app:destination="@id/coffeeSplashScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coffeeSplashScreenFragment"
+        android:name="com.example.myhomeworks.CoffeeSplashScreenFragment"
+        android:label="fragment_coffee_splash_screen"
+        tools:layout="@layout/fragment_coffee_splash_screen" />
+</navigation>
