@@ -22,7 +22,7 @@ class IncomingData : ViewModel() {
     var company3_corn = MutableLiveData(0)
 
 
-    fun incomingData() = runBlocking<Unit> {
+    fun incomingData(){
         CoroutineScope(Dispatchers.Main).launch {
             while (!winner) {
                 delay(100)
