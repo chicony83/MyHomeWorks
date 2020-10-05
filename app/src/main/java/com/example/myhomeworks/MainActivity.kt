@@ -3,10 +3,6 @@ package com.example.myhomeworks
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         button_coffee_catalog.setOnClickListener{
-            val intent= Intent(this,CoffeeSplashScreenActivity::class.java)
+            val intent= Intent(this,DZ5CoffeeSplashScreenActivity::class.java)
             startActivity(intent)
         }
 

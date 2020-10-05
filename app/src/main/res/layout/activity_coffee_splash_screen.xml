@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CoffeeSplashScreenActivity">
+    tools:context=".DZ5CoffeeSplashScreenActivity">
 
     <fragment
         android:name="com.example.myhomeworks.CoffeeSplashScreenFragment"
@@ -21,7 +21,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <Button
-            android:id="@+id/addNewCoffe"
+            android:id="@+id/button_addNewCoffee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="5"
@@ -30,7 +30,7 @@
             tools:layout_editor_absoluteX="0dp" />
 
         <Button
-            android:id="@+id/catalogCoffee"
+            android:id="@+id/button_catalogCoffee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="5"
