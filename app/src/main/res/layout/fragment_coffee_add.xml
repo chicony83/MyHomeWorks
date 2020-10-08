@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     tools:context=".CoffeeAddFragment">
 
     <ImageView
@@ -12,10 +13,52 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/addCoffeeTitle_textView"
         style="@style/headingCoffeeActivityText"
         android:text="@string/add_coffee"
+        android:textColor="@color/Gray"
         tools:ignore="MissingConstraints"
-        android:textColor="@color/lightGray"
-        />
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <EditText
+        android:id="@+id/addSortCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="sort of coffee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCoffeeTitle_textView"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/addURLCoffeePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="insert url picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addSortCoffee"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="16dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+    <Button
+        android:id="@+id/addCoffeeInBD"
+        android:textSize="30sp"
+        android:text="add coffee sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

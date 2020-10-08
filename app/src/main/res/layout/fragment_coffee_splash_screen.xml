@@ -10,10 +10,5 @@
         style="@style/backgroundCoffeeFragments"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        style="@style/headingCoffeeActivityText"
-        android:text="@string/welcome_to_coffee_catalog"
-        tools:ignore="MissingConstraints"
-        android:textColor="@color/lightGray"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
