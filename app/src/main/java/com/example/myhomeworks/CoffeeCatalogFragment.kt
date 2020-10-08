@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myhomeworks.adapter.CoffeeAdapter
-import com.example.myhomeworks.dto.coffeerSet
+import com.example.myhomeworks.dto.coffeeDataBase
 import kotlinx.android.synthetic.main.fragment_coffee_catalog.*
 
 class CoffeeCatalogFragment : Fragment() {
@@ -21,7 +21,7 @@ class CoffeeCatalogFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val adapter = CoffeeAdapter(coffeerSet.catalogCoffee())
+        val adapter = CoffeeAdapter(coffeeDataBase.catalogCoffee)
 
         coffeeRecycler.adapter = adapter
         coffeeRecycler.layoutManager = LinearLayoutManager(view?.context)

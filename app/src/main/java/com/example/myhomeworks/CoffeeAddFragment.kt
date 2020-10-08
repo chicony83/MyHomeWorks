@@ -5,8 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.myhomeworks.dto.Coffee
-import com.example.myhomeworks.dto.coffeerSet
+import com.example.myhomeworks.dto.coffeeDataBase
 import kotlinx.android.synthetic.main.fragment_coffee_add.*
 
 class CoffeeAddFragment : Fragment() {
@@ -22,7 +21,7 @@ class CoffeeAddFragment : Fragment() {
 
 
         addCoffeeInBD.setOnClickListener {
-            coffeerSet.addInCoffeeCatalog(
+            coffeeDataBase.addIiCoffeeCatalog(
                 addSortCoffee.text.toString(),
                 addURLCoffeePicture.text.toString()
             )

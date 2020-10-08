@@ -5,24 +5,26 @@ data class Coffee(
     val photoURL: String
 )
 
-object coffeerSet {
+object coffeeDataBase {
 
-    fun catalogCoffee() = mutableListOf<Coffee>(
-//        Coffee(
-//            "Arabica",
-//            "https://dom-eda.com/uploads/images/catalog/item/a65a48f6c4/2285f7c353_500.jpg"
-//        ),
-        Coffee(
-            "Robusta",
-            "https://slon-tea.ru/wa-data/public/shop/products/45/18/1845/images/8180/8180.970.jpg"
-        )
-    )
+    val catalogCoffee = mutableListOf<Coffee>()
 
-    fun addInCoffeeCatalog(
+    fun addIiCoffeeCatalog(
         name: String,
         url: String
     ) {
-
-        catalogCoffee().add(Coffee(name = name,photoURL = url))
+        catalogCoffee.add(Coffee(name, url))
     }
+
+    fun fillingTheBase() {
+        addIiCoffeeCatalog(
+            name = "Arabica",
+            url = "https://dom-eda.com/uploads/images/catalog/item/a65a48f6c4/2285f7c353_500.jpg"
+        )
+        addIiCoffeeCatalog(
+            name = "Robusta",
+            url = "https://slon-tea.ru/wa-data/public/shop/products/45/18/1845/images/8180/8180.970.jpg"
+        )
+    }
+
 }

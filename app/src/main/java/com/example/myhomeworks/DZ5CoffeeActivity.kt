@@ -2,7 +2,7 @@ package com.example.myhomeworks
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.myhomeworks.dto.coffeerSet
+import com.example.myhomeworks.dto.coffeeDataBase
 import kotlinx.android.synthetic.main.activity_coffee_splash_screen.*
 
 class DZ5CoffeeActivity : AppCompatActivity() {
@@ -13,7 +13,7 @@ class DZ5CoffeeActivity : AppCompatActivity() {
         val coffeeAddFragment = CoffeeAddFragment()
         val coffeeCatalogFragment = CoffeeCatalogFragment()
 
-        addCoffee()
+        coffeeDataBase.fillingTheBase()
 
         button_addNewCoffee.setOnClickListener{
             supportFragmentManager.beginTransaction().replace(R.id.fr_place,coffeeAddFragment).commit()
@@ -21,9 +21,5 @@ class DZ5CoffeeActivity : AppCompatActivity() {
         button_catalogCoffee.setOnClickListener{
             supportFragmentManager.beginTransaction().replace(R.id.fr_place,coffeeCatalogFragment).commit()
         }
-    }
-
-    private fun addCoffee() {
-        coffeerSet.addInCoffeeCatalog("Arabica","https://dom-eda.com/uploads/images/catalog/item/a65a48f6c4/2285f7c353_500.jpg")
     }
 }
