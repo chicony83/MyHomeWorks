@@ -3,6 +3,7 @@ package com.example.myhomeworks
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PersistableBundle
+import kotlinx.android.synthetic.main.fragment_dz_7_splash.*
 
 class DZ7Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,23 +15,6 @@ class DZ7Activity : AppCompatActivity() {
 
         supportFragmentManager.beginTransaction().add(R.id.fragment_layout,dZ7SplashFragment).commit()
 
-//        supportFragmentManager.beginTransaction().replace(R.id.fragment_layout, dZ7SplashFragment).commit()
-//        button_start_anim_congratulation.setOnClickListener {
-//            YoYo.with(Techniques.FadeOutUp)
-//                .duration(1000)
-//                .playOn(button_start_anim_congratulation)
-//            YoYo.with(Techniques.FadeOutDown)
-//                .duration(1000)
-//                .onEnd{
-//                    nextFrame()
-//                }
-//                .playOn(text_on_button_start_anim_congratulation)
-//
-//
-//        }
-    }
-
-    private fun nextFrame() {
 
     }
 }
