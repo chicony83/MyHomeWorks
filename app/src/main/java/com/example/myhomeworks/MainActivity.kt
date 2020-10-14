@@ -24,5 +24,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        button_dz_7_Mother_day.setOnClickListener{
+            startActivity(Intent(this,DZ7Activity::class.java))
+        }
+
     }
 }

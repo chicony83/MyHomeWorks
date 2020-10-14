@@ -63,4 +63,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.796" />
+
+    <Button
+        android:id="@+id/button_dz_7_Mother_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="день матери"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        android:layout_margin="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
