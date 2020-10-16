@@ -12,7 +12,7 @@
         android:layout_height="200dp"
         android:background="@drawable/style_button_start_congratulation"
         android:scaleType="centerCrop"
-        android:src="@drawable/sunflower"
+        android:src="@drawable/present"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

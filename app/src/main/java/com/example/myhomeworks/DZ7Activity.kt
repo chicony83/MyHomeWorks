@@ -13,8 +13,11 @@ class DZ7Activity : AppCompatActivity() {
         val dZ7SplashFragment = DZ7SplashFragment()
         val dZ7CardFragment = DZ7CardFragment()
 
-        supportFragmentManager.beginTransaction().add(R.id.fragment_layout,dZ7SplashFragment).commit()
-
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_layout, dZ7SplashFragment)
+            .addToBackStack(null)
+            .commit()
 
     }
 }

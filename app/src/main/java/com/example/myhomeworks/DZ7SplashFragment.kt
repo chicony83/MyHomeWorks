@@ -16,10 +16,7 @@ class DZ7SplashFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-
         return inflater.inflate(R.layout.fragment_dz_7_splash, container, false)
-
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -40,8 +37,11 @@ class DZ7SplashFragment : Fragment() {
 
     private fun nextFrame() {
         val dZ7CardFragment = DZ7CardFragment()
-        activity?.supportFragmentManager?.beginTransaction()?.
-            replace(R.id.fragment_layout, dZ7CardFragment)?.commit()
+        activity
+            ?.supportFragmentManager
+            ?.beginTransaction()
+            ?.setCustomAnimations(R.anim.enter,R.anim.exit)
+            ?.replace(R.id.fragment_layout, dZ7CardFragment)
+            ?.commit()
     }
-
 }
