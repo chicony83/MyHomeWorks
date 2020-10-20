@@ -12,6 +12,7 @@
     <string name="data_base">data Base</string>
     <string name="add_coffee">Add Coffee</string>
     <string name="catalog_coffee">Coffee catalog</string>
+    <string name="add_in_data_base">add in data Base</string>
 
 
 </resources>

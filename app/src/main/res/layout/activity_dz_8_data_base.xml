@@ -5,8 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DZ8DataBaseActivity">
-<fragment
-    android:id="@+id/perent_fragment_DataBase"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+
+    <fragment
+        android:id="@+id/parent_fragment_DataBase"
+        android:name="com.example.myhomeworks.DataBaseMainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            style="@style/mainButtonsActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_in_data_base"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

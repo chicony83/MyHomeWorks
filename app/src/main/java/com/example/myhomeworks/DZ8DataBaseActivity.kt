@@ -13,7 +13,7 @@ class DZ8DataBaseActivity : AppCompatActivity() {
 
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.perent_fragment_DataBase, dataBaseMainFragment)
+            .replace(R.id.parent_fragment_DataBase, dataBaseMainFragment)
             .commit()
     }
 }
