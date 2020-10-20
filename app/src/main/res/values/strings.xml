@@ -15,4 +15,7 @@
     <string name="coffee_catalog">Coffee Catalog</string>
     <string name="welcome_to_coffee_catalog">welcom to coffee catalog</string>
 
+    <string name="catalog_coffee">catalog coffee</string>
+    <string name="add_coffee">add coffee</string>
+
 </resources>
