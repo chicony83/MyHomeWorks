@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".DZ8DataBaseActivity">
 <fragment
-    android:id="@+id/perent_fragment_DataBAse"
+    android:id="@+id/perent_fragment_DataBase"
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

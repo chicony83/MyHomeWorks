@@ -11,6 +11,6 @@ class DZ8DataBaseActivity : AppCompatActivity() {
         val dataBaseMainFragment = DataBaseMainFragment()
         val  dataBaseAddInBaseFragment = DataBaseAddInBaseFragment()
 
-        supportFragmentManager.beginTransaction().replace(R.id.perent_fragment_DataBAse, dataBaseMainFragment).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.perent_fragment_DataBase, dataBaseMainFragment).commit()
     }
 }
