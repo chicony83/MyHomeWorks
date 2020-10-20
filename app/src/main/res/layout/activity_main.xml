@@ -36,6 +36,13 @@
         app:layout_constraintTop_toBottomOf="@+id/button_coffee_catalog"
         tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/button_dz_8_data_base"
+        style="@style/mainButtonsActivity"
+        app:layout_constraintTop_toBottomOf="@+id/button_dz_7_Mother_day"
+        tools:ignore="MissingConstraints"
+        android:text="@string/data_base"/>
+
     <TextView
         android:id="@+id/text_view"
         android:layout_width="wrap_content"

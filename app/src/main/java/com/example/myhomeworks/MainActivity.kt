@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
             val intent= Intent(this,DZ5CoffeeActivity::class.java)
             startActivity(intent)
         }
-
+        button_dz_8_data_base.setOnClickListener{
+            startActivity(Intent(this,DZ8DataBaseActivity::class.java))
+        }
     }
 }

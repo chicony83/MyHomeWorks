@@ -9,5 +9,9 @@
     <string name="сongratulation">поздравление</string>
     <string name="coffeeCatalog">coffee Catalog</string>
     <string name="motherDayButtonText">день матери</string>
+    <string name="data_base">data Base</string>
+    <string name="add_coffee">Add Coffee</string>
+    <string name="catalog_coffee">Coffee catalog</string>
+
 
 </resources>
