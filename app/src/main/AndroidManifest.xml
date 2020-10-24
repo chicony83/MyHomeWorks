@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".DZ8DataBaseActivity"></activity>
-        <activity android:name=".DZ7Activity" />
+<!--        <activity android:name=".DZ7Activity" />-->
         <activity android:name=".DZ5CoffeeActivity" />
         <activity android:name=".AnimationActivity" />
         <activity android:name=".FlagsActivity" />

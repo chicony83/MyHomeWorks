@@ -24,7 +24,7 @@ class CoffeeCatalogFragment : Fragment() {
         val adapter = CoffeeAdapter(coffeeDataBase.catalogCoffee)
 
         coffeeRecycler.adapter = adapter
-        coffeeRecycler.layoutManager = LinearLayoutManager(view?.context)
+        coffeeRecycler.layoutManager = LinearLayoutManager(view.context)
         coffeeRecycler.hasFixedSize()
 
     }
