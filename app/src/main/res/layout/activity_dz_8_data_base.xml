@@ -25,6 +25,7 @@
         tools:ignore="MissingConstraints">
 
         <Button
+            android:id="@+id/add_in_data_base_button"
             style="@style/mainButtonsActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

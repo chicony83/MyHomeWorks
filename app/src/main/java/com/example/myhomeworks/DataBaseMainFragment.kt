@@ -13,6 +13,7 @@ import com.example.myhomeworks.DataBase.Util.launchUI
 import com.example.myhomeworks.DataBase.Db
 
 import com.example.myhomeworks.adapter.CoffeeDBAdapter
+import kotlinx.android.synthetic.main.activity_dz_8_data_base.*
 import kotlinx.android.synthetic.main.fragment_data_base_main.*
 import kotlinx.coroutines.*
 
@@ -26,7 +27,7 @@ class DataBaseMainFragment : Fragment() {
 
         val db: CoffeeDao = Db.getDB(requireContext()).coffeeDao()
 
-        button_get_info_from_coffee_db.setOnClickListener {
+//        button_get_info_from_coffee_db.setOnClickListener {
             launchIO {
                 val result:List<Coffee> = db.getAllCoffee()
                 launchUI {
@@ -36,7 +37,10 @@ class DataBaseMainFragment : Fragment() {
                     coffeeDBRecycler.hasFixedSize()
                 }
             }
+//        }
+        add_in_data_base_button.setOnClickListener {
         }
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
