@@ -1,10 +1,11 @@
-package com.example.myhomeworks
+package com.example.myhomeworks.DZ5Fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.myhomeworks.R
 import com.example.myhomeworks.dto.coffeeDataBase
 import kotlinx.android.synthetic.main.fragment_coffee_add.*
 

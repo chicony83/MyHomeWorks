@@ -1,11 +1,11 @@
-package com.example.myhomeworks
+package com.example.myhomeworks.DZ5Fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.activity_coffee_splash_screen.*
+import com.example.myhomeworks.R
 
 
 class CoffeeSplashScreenFragment : Fragment() {

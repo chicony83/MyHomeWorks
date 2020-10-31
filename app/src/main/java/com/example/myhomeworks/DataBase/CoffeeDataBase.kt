@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.example.myhomeworks.DataBase.Dao.CoffeeDao
 import com.example.myhomeworks.DataBase.Entity.Coffee
 
-@Database(entities = arrayOf(Coffee::class), version = 1)
+@Database(entities = [Coffee::class], version = 1)
 
 abstract class CoffeeDataBase : RoomDatabase() {
 
@@ -18,4 +18,5 @@ abstract class CoffeeDataBase : RoomDatabase() {
 object Db {
     fun getDB(ctx: Context) =
         Room.databaseBuilder(ctx,CoffeeDataBase::class.java,"CoffeeDataBase").build()
+
 }

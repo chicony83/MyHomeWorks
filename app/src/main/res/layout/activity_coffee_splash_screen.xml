@@ -8,7 +8,7 @@
     tools:context=".DZ5CoffeeActivity">
 
     <fragment
-        android:name="com.example.myhomeworks.CoffeeSplashScreenFragment"
+        android:name="com.example.myhomeworks.DZ5Fragments.CoffeeSplashScreenFragment"
         android:id="@+id/fr_place"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

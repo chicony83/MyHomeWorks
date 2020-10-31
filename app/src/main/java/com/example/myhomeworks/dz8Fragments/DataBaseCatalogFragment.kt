@@ -1,4 +1,4 @@
-package com.example.myhomeworks
+package com.example.myhomeworks.dz8Fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -11,23 +11,21 @@ import com.example.myhomeworks.DataBase.Entity.Coffee
 import com.example.myhomeworks.DataBase.Util.launchIO
 import com.example.myhomeworks.DataBase.Util.launchUI
 import com.example.myhomeworks.DataBase.Db
+import com.example.myhomeworks.R
 
 import com.example.myhomeworks.adapter.CoffeeDBAdapter
-import kotlinx.android.synthetic.main.activity_dz_8_data_base.*
-import kotlinx.android.synthetic.main.fragment_data_base_main.*
-import kotlinx.coroutines.*
+import kotlinx.android.synthetic.main.fragment_data_base_catalog.*
 
 @Suppress("UNREACHABLE_CODE")
-class DataBaseMainFragment : Fragment() {
+class DataBaseCatalogFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_data_base_main, container, false)
+        return inflater.inflate(R.layout.fragment_data_base_catalog, container, false)
 
         val db: CoffeeDao = Db.getDB(requireContext()).coffeeDao()
 
-//        button_get_info_from_coffee_db.setOnClickListener {
             launchIO {
                 val result:List<Coffee> = db.getAllCoffee()
                 launchUI {
@@ -37,14 +35,12 @@ class DataBaseMainFragment : Fragment() {
                     coffeeDBRecycler.hasFixedSize()
                 }
             }
-//        }
-        add_in_data_base_button.setOnClickListener {
-        }
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
     }
 }

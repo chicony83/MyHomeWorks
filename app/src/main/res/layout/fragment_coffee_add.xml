@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20dp"
-    tools:context=".CoffeeAddFragment">
+    tools:context=".DZ5Fragments.CoffeeAddFragment">
 
     <ImageView
         android:id="@+id/background_imageView"

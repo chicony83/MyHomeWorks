@@ -11,8 +11,18 @@
     <string name="motherDayButtonText">день матери</string>
     <string name="data_base">data Base</string>
     <string name="add_coffee">Add Coffee</string>
+
     <string name="catalog_coffee">Coffee catalog</string>
-    <string name="add_in_data_base">add in data Base</string>
+
+    <string name="add_in_data_base">add in Coffee</string>
+    <string name="edit_data_base">edit DB</string>
+    <string name="delete_in_db">delete in DB</string>
+    <string name="clear_db">clear DB</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_in_DB">Add in catalog</string>
+    <string name="add_in_catalog">add in catalog</string>
 
 
 </resources>

@@ -4,33 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".DZ8DataBaseActivity">
 
     <fragment
         android:id="@+id/parent_fragment_DataBase"
-        android:name="com.example.myhomeworks.DataBaseMainFragment"
+        android:name="com.example.myhomeworks.dz8Fragments.DataBaseCatalogFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="100"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="InefficientWeight,MissingConstraints" />
 
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints">
 
-        <Button
-            android:id="@+id/add_in_data_base_button"
-            style="@style/mainButtonsActivity"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/add_in_data_base"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            android:orientation="horizontal">
 
-    </FrameLayout>
+            <Button
+                android:id="@+id/to_fragment_add_in_data_base_button"
+                style="@style/normal_buttons"
+                android:text="@string/add_in_data_base" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/coffee_data_base_catalog_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_normal"
+                android:layout_weight="10"
+                android:text="@string/coffeeCatalog" />
+
+            <ImageButton
+                android:id="@+id/settings_data_base_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_normal"
+                android:layout_weight="1"
+                android:src="@drawable/settings_asset"
+                android:text="@string/clear_db" />
+        </LinearLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

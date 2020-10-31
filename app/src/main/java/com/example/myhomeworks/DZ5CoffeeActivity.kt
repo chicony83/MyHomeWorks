@@ -2,6 +2,8 @@ package com.example.myhomeworks
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myhomeworks.DZ5Fragments.CoffeeAddFragment
+import com.example.myhomeworks.DZ5Fragments.CoffeeCatalogFragment
 import com.example.myhomeworks.dto.coffeeDataBase
 import kotlinx.android.synthetic.main.activity_coffee_splash_screen.*
 

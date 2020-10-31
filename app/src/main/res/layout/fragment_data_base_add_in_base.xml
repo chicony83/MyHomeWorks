@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DataBaseAddInBaseFragment">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+    android:orientation="vertical"
+    tools:context=".dz8Fragments.DataBaseAddInBaseFragment">
 
-</FrameLayout>
+    <TextView
+        style="@style/H1Title"
+        android:text="@string/add_in_DB" />
+
+    <EditText
+        android:id="@+id/enteredSortOfCoffee"
+        style="@style/H2content"
+        android:hint="enter sort of coffee "
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/enteredPriceOfCoffee"
+        style="@style/H2content"
+        android:hint="enter coffee price per 1 kilo"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/enteredURL"
+        style="@style/H2content"
+        android:hint="enter URL Image" />
+
+    <Button
+        android:id="@+id/add_in_DB_button"
+        style="@style/H2Title"
+        android:text="@string/add_in_catalog" />
+</LinearLayout>
