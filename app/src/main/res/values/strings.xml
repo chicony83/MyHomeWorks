@@ -17,5 +17,6 @@
 
     <string name="catalog_coffee">catalog coffee</string>
     <string name="add_coffee">add coffee</string>
+    <string name="light_sensor_button_text">Light Sensor</string>
 
 </resources>
