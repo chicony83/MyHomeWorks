@@ -12,8 +12,8 @@
         style="@style/mainButtonsActivity"
         android:text="@string/load_picture"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
 
     <Button
         android:id="@+id/button_dz_03"
@@ -34,6 +34,13 @@
         style="@style/mainButtonsActivity"
         android:text="@string/motherDayButtonText"
         app:layout_constraintTop_toBottomOf="@+id/button_coffee_catalog"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_dz_sensors"
+        style="@style/mainButtonsActivity"
+        android:text="@string/light_sensor_button_text"
+        app:layout_constraintTop_toBottomOf="@+id/button_dz_7_Mother_day"
         tools:ignore="MissingConstraints" />
 
     <TextView

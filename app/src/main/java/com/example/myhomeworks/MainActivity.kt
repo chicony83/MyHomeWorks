@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
             val intent= Intent(this,DZ5CoffeeActivity::class.java)
             startActivity(intent)
         }
-
+        button_dz_sensors.setOnClickListener{
+            startActivity(Intent(this,DZSensorsActivity::class.java))
+        }
     }
 }
