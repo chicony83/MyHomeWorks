@@ -10,13 +10,9 @@
         android:id="@+id/button_load_img"
         style="@style/mainButtonsActivity"
         android:text="@string/load_picture"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
 
     <Button
         android:id="@+id/button_dz_03"
@@ -39,36 +35,10 @@
         app:layout_constraintTop_toBottomOf="@+id/button_coffee_catalog"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:id="@+id/button2"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/button_harvesting"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_add_1" />
-
     <Button
-        android:id="@+id/button_add_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="add 1"
         android:id="@+id/button_harvesting"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
         android:text="@string/harvesting"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.796" />
-
+        style="@style/mainButtonsActivity"
+        app:layout_constraintTop_toBottomOf="@+id/button_dz_7_Mother_day"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
