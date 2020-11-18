@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button_load_img"
         style="@style/mainButtonsActivity"
         android:text="@string/load_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="16dp"
         tools:ignore="MissingConstraints" />
@@ -43,6 +46,11 @@
         android:text="0"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/button2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/button_harvesting"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_add_1" />
@@ -52,6 +60,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="add 1"
+        android:id="@+id/button_harvesting"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="@string/harvesting"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
