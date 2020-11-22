@@ -19,16 +19,24 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DZ3Activity::class.java)
             startActivity(intent)
         }
-        button_coffee_catalog.setOnClickListener{
-            val intent= Intent(this,DZ5CoffeeActivity::class.java)
+        button_coffee_catalog.setOnClickListener {
+            val intent = Intent(this, DZ5CoffeeActivity::class.java)
             startActivity(intent)
         }
 
-        button_harvesting.setOnClickListener{
-            val intent = Intent(this,DZ4HarvestingAktivity::class.java)
+        button_harvesting.setOnClickListener {
+            val intent = Intent(this, DZ4HarvestingAktivity::class.java)
             startActivity(intent)
         }
 
+        button_fibo.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    DZ12FiboTestsActivity::class.java
+                )
+            )
+        }
 
 
     }

@@ -41,4 +41,11 @@
         style="@style/mainButtonsActivity"
         app:layout_constraintTop_toBottomOf="@+id/button_dz_7_Mother_day"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_fibo"
+        style="@style/mainButtonsActivity"
+        android:text="fibo"
+        app:layout_constraintTop_toBottomOf="@+id/button_harvesting"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

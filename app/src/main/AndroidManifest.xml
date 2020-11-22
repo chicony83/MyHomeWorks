@@ -3,6 +3,7 @@
     package="com.example.myhomeworks">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,14 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DZ7Activity"></activity>
+        <activity android:name=".DZ12FiboTestsActivity"></activity>
+        <activity android:name=".DZ7Activity" />
         <activity android:name=".DZ5CoffeeActivity" />
         <activity android:name=".AnimationActivity" />
         <activity android:name=".FlagsActivity" />
         <activity android:name=".DZ3Activity" />
         <activity android:name=".DZ1Activity" />
-
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".DZ1Activity" />
         <activity android:name=".DZ4HarvestingAktivity" />
         <activity android:name=".MainActivity">
