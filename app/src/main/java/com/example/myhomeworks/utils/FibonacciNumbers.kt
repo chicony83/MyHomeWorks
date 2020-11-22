@@ -1,21 +1,25 @@
 package com.example.myhomeworks.utils
 
+import android.util.Log
+
 object FibonacciNumbers {
 
-    fun validate(
-        fiboNum1: Int,
-        fiboNum2: Int
-    ): Boolean {
-        if (fiboNum1 != 0) return false
-        if (fiboNum2 != 1) return false
-        return true
-    }
+    fun countFibonacci(n: Int): Int {
 
-    @JvmOverloads
-    tailrec fun countFibonacci(n: Int, a: Int, b: Int): Int =
-        when (n) {
-            0 -> a
-            1 -> b
-            else -> countFibonacci(n - 1, b, a + b)
+        if (n == 1) return 0
+        if (n == 2) return 1
+
+        var firstNum = 0
+        var secondNum = 1
+        var fibo = 0
+
+        for (i in 3..n) {
+
+            fibo = firstNum+secondNum
+            firstNum = secondNum
+            secondNum = fibo
+
         }
+        return fibo
+    }
 }
